@@ -1,0 +1,22 @@
+{
+  "name": "mantle-cdn",
+  "version": "1.0.0",
+  "description": "Content distributor for the Mantle video sharing platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Redpug111/Mantle-cdn.git"
+  },
+  "author": "Redpug111",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Redpug111/Mantle-cdn/issues"
+  },
+  "homepage": "https://github.com/Redpug111/Mantle-cdn#readme",
+  "dependencies": {
+    "formidable": "^2.1.1"
+  }
+}
