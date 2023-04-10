@@ -105,3 +105,4 @@ dist
 
 # Videos
 videos/*
+!videos/example.mp4
