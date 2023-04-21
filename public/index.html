@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videos</title>
+
+  <style>
+    
+    html {
+      background-color: #090909;
+      scroll-snap-type: y mandatory;
+    }
+
+    .video-box {
+      display: flex;
+      align-items: center;
+      scroll-snap-align: center;
+    }
+
+    .video-box video {
+      box-sizing: border-box;
+      padding: 8px;
+      margin: 0 auto;
+      min-height: 95vh;
+      max-height: 100vh;
+      max-width: 50%;
+    }
+    .fab-container{
+    position:fixed;
+    bottom:50px;
+    right:50px;
+    cursor:pointer;
+}
+.iconbutton{
+width:50px;
+height:50px;
+border-radius: 100%;
+background: #FF4F79;
+box-shadow: 3px 3px 5px #540e4d;
+}
+.button{
+width:60px;
+height:60px;
+background:#A11692;
+}
+  </style>
+  <!-- [Attributes by Finsweet] Auto Video -->
+<script defer src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-autovideo@1/autovideo.js"></script>
+</head>
+
+<body>
+  <div class="videos" id="container" onscroll="console.log('section')">
+  
+    <div class="video-box">
+      <video preload="none" poster="vert2.png" controls loop muted>
+        <source src="http://localhost:3000/example.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+    <div class="fab-container">
+    <div class="button iconbutton" onclick="addVideo();goCarousel('next')">
+    <i class="fa-solid fa-plus"></i>
+    </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
